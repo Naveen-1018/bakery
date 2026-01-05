@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-navbutton-color" content="#000" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000" />
+    <meta
+      name="description"
+      content="Discover fresh, handcrafted breads at NaveenBakery. Enjoy a variety of delicious options baked daily."
+    />
+    <meta
+      name="keywords"
+      content="bakery, fresh bread, pastries, croissants, sweet bread"
+    />
+    <meta name="author" content="NaveenBakery" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/logo/logo.svg"
+      type="image/x-icon"
+    />
+    <title>
+      NAVEENBAKERY - Discover fresh, handcrafted breads at BubbleBakery. Enjoy a
+      variety of delicious options baked daily.
+    </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <h3 onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #da6f0b"></i
+            >&nbsp;NAVEEN Bakery
+          </h3>
+        </div>
+        <nav class="navigation">
+          <h3 class="pb-2 brand d-none" onclick="window.location.href=''">
+            <i class="fa-solid fa-burger fa-bounce" style="color: #c7a17a"></i
+            >&nbsp;BubbleBakery
+          </h3>
+         <li>
+  <a
+    class="active"
+    href="#home"
+    id="home-nav"
+  >
+    <i class="fa-solid fa-house"></i>&ensp;Home
+  </a>
+</li>
+<li>
+  <a
+    href="#products"
+    id="product-nav"
+  >
+    <i class="fa-solid fa-bread-slice"></i>&ensp;Product List
+  </a>
+</li>
+<li>
+  <a
+    href="#faq"
+    id="service-nav"
+  >
+    <i class="fa-solid fa-user-gear"></i>&ensp;Services
+  </a>
+</li>
+<li>
+  <a
+    href="#services"
+    id="order-nav"
+  >
+    <i class="fa-solid fa-cart-shopping"></i>&ensp;Ordering
+  </a>
+</li>
+<li>
+  <a
+    href="#about"
+    id="about-us"
+  >
+    <i class="fa-solid fa-users"></i>&ensp;About Us
+  </a>
+</li>
+        </nav>
+        <div class="bars">
+          <img
+            src="assets/images/others/menu.png"
+            alt="hamburger-menu"
+            class="bar"
+          />
+        </div>
+      </div>
+    </header>
+   <div class="home-section" id="home">
+      <div class="home-content">
+        <h1 style="color: #edf2f7">
+          Made with Love,<br />
+          Enjoyed with <br />Taste
+        </h1>
+        <p>Made from Natural & Premium Ingredients, for Authentic Flavor</p>
+        <div class="home-links">
+          <div class="first">
+            <a
+    href="#products"
+    id="product-nav"
+  >
+    Shop Now
+  </a>
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-shop" id="products">
+      <div class="shop-links">
+        <div><h2>Product List</h2></div>
+        <div class="links">
+          <li
+            class="active link-menu"
+            onclick="setActive(this)"
+            data-filter="all"
+          >
+            All
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".roti-bagel"
+            onclick="setActive(this)"
+          >
+            Bagels
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".sandwich"
+            onclick="setActive(this)"
+          >
+            Sandwiches
+          </li>
+          <li
+            class="link-menu"
+            data-filter=".focaccia"
+            onclick="setActive(this)"
+          >
+            Focaccia
+          </li>
+        </div>
+      </div>
+      <div class="shop-flex consts">
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/2-lapis.png" alt="Sandwich Bread" />
+          </div>
+          <h2>Two-Layer Sandwich</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 8000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(283)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/3-lapis.png" alt="Sandwich Bread" />
+          </div>
+          <h2>Three-Layer Sandwich</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 12,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/segitiga.png"
+              alt="Sandwich Bread"
+            />
+          </div>
+          <h2>Triangle Sandwich</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 7,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(452)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix sandwich">
+          <div class="shop-image">
+            <img src="assets/images/products/panjang.png" alt="Sandwich Bread" />
+          </div>
+          <h2>Long Sandwich</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 14,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(459)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-salmon.png"
+              alt="Bagel Bread"
+            />
+          </div>
+          <h2>Salmon Bagel</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 22,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/bagel-vanila.png"
+              alt="Bagel Bread"
+            />
+          </div>
+          <h2>Vanilla Bagel</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 13,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(879)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel.png" alt="Bagel Bread" />
+          </div>
+          <h2>Poppy Seed Bagel</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 11,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(785)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix roti-bagel">
+          <div class="shop-image">
+            <img src="assets/images/products/bagel-2.png" alt="Bagel Bread" />
+          </div>
+          <h2>Sesame Seed Bagel</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 10,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(352)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/fokacia-salmon.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Salmon Focaccia</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 17,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(999+)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia.png" alt="Focaccia" />
+          </div>
+          <h2>Green Leaf Focaccia</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 9,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(87)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img src="assets/images/products/fokacia2.png" alt="Focaccia" />
+          </div>
+          <h2>Olive Focaccia</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 13,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(42)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+        <div class="shop1 mix focaccia">
+          <div class="shop-image">
+            <img
+              src="assets/images/products/foccacia-original.png"
+              alt="Focaccia"
+            />
+          </div>
+          <h2>Original Focaccia</h2>
+          <div class="d-flex justify-content-between">
+            <article>₹ 8,000</article>
+            <div
+              class="d-flex mb-3 align-items-center gap-1 justify-content-center"
+            >
+              <div class="stars mb-0 d-flex align-items-center gap-1">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div style="font-size: 12px">(644)</div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-custom w-100"
+            onclick="sendWhatsAppMessage(this)"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>&ensp;Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-menu" id="menu">
+      <div class="menu-title">
+        <section>Pricelist</section>
+        <h2>Coffee List</h2>
+        <hr />
+      </div>
+      <div class="menu-flex">
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/americano.png" alt="" />
+          </div>
+          <div><h4>Chocolate Espresso</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 15,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/cappucino.png" alt="" />
+          </div>
+          <div><h4>Cappuccino</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 14,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/coffelatte.png" alt="" />
+          </div>
+          <div><h4>Coffee Latte</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 14,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/espresso.png" alt="" />
+          </div>
+          <div><h4>Milk Espresso</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 12,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/kopisusuvanilla.png" alt="" />
+          </div>
+          <div><h4>Vanilla Milk Coffee</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 13,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/espresso.png" alt="" />
+          </div>
+          <div><h4>Caramel Milk Coffee</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 13,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/americano.png" alt="" />
+          </div>
+          <div><h4>Americano</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 12,000</h4></div>
+        </div>
+        <div class="menu1">
+          <div class="small-image">
+            <img src="assets/images/products/vanillalatte.png" alt="" />
+          </div>
+          <div><h4>Vanilla Latte</h4></div>
+          <div class="line"></div>
+          <div><h4>₹ 12,000</h4></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gallery" id="galery">
+      <div class="gallery-flex">
+        <div class="image-one event">
+          <img src="assets/images/others/gallery-1.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+        <div class="inside-gallery">
+          <div class="left">
+            <div class="event">
+              <img src="assets/images/others/gallery-2.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/others/gallery-3.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+          <div class="right">
+            <div class="event">
+              <img src="assets/images/others/gallery-4.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+            <div class="event">
+              <img src="assets/images/others/gallery-5.jpg" alt="" />
+              <div class="overlay"></div>
+            </div>
+          </div>
+        </div>
+        <div class="last-image event">
+          <img src="assets/images/others/gallery-6.jpg" alt="" />
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-about" id="services">
+      <div class="about-flex">
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/left-footer-image.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">How to Order</h3>
+            <div class="txt-inside">
+              <section>Via WhatsApp</section>
+              <section>98123456789</section>
+            </div>
+            <div class="txt-inside">
+              <section>Via Outlet</section>
+              <section class="text-end">
+                4 outlet locations available in Indonesia
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="about1">
+          <div>
+            <img
+              src="assets/images/others/right-footer-image.jpg"
+              alt="footer-image-2"
+            />
+          </div>
+          <div class="about1-txt">
+            <h3 style="letter-spacing: 2px">Operating Hours</h3>
+            <div class="txt-inside">
+              <section>Every Day</section>
+              <section>09:00 AM - 09:00 PM WIB</section>
+            </div>
+            <div class="txt-inside">
+              <section>Friday</section>
+              <section>01:00 PM - 09:00 PM WIB</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <div class="faq" id="faq" style="max-width: 90%; margin: 0 auto">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <div class="accordion" id="faq-css-only">
+
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q1" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q1" class="accordion-button">
+          What types of bread are available at this shop?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          We serve a diverse selection of bread, ranging from soft classic bread to unique bread creations with various flavors and textures.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q2" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q2" class="accordion-button">
+          Can I order bread online?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          <strong>Yes,</strong> we provide online ordering services. You can place an order through our website or through delivery applications that partner with us.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q3" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q3" class="accordion-button">
+          How long does the bread last after purchase?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          Loaf bread and sweet bread generally last up to 2-3 days if stored in a cool place. Bread without preservatives should be consumed immediately for the best quality.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q4" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q4" class="accordion-button">
+          Does this bakery offer delivery service?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          <strong>Yes,</strong> we provide delivery service for certain areas. You can contact us to find out the available delivery areas or order through a delivery application.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q5" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q5" class="accordion-button">
+          What if I want to file a complaint or suggestion?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          We are always open to hearing your feedback! Please contact us via email at contact@example.com or via our phone/WhatsApp number at 08123456789.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q6" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q6" class="accordion-button">
+          Are there discounts for bulk purchases?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          <strong>Yes, </strong> we provide special discounts for bulk purchases, such as orders for events or catering. Please contact us for more information.
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q7" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q7" class="accordion-button">
+          Where are the locations of this bakery's outlets?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          You can order directly at our shop by visiting one of our four outlets located at:
+          <ul class="list-unstyled mt-3">
+            <li>
+              <strong>Villupuram:</strong> Jl.  No. 12, food street, Central bus top, DKI nagar 10340
+            </li>
+            <li>
+              <strong>Coimbatore:</strong> Jl. Tunjungan No. 5, Genteng, chinniyampalayam City, East nagar 60275
+            </li>
+            <li>
+              <strong>chennai:</strong> Jl. Malioboro No. 21, adaiyar, chennai District, DI nagar 55213
+            </li>
+            <li>
+              <strong>Goa:</strong> Jl. Pemuda No. 25, Kauman, Jepara Sub-district, Jepara Regency, Central nagar 59417
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="accordion-item">
+      <input type="radio" name="accordion-toggle" id="q8" class="accordion-radio-css" hidden>
+      <h2 class="accordion-header">
+        <label for="q8" class="accordion-button">
+          What time does the bakery open?
+        </label>
+      </h2>
+      <div class="accordion-collapse-css">
+        <div class="accordion-body">
+          Our bakery is open every day from 09:00 AM to 09:00 PM WIB. On Fridays, we open from 01:00 PM to 09:00 PM WIB. However, opening hours may change on national holidays.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <div class="footer pb-3" id="about">
+      <div class="footer-flex">
+        <div class="footer-brand">
+          <div>
+            <h3
+              style="
+                font-family: 'Pushster', cursive;
+                font-weight: 700;
+                letter-spacing: 2px;
+              "
+            >
+              <i class="fa-solid fa-burger" style="color: #c7a17a"></i
+              >&nbsp;NAVEENBakery
+            </h3>
+          </div>
+          <section style="line-height: 1.45rem; margin-top: 10px">
+            A place where the aroma of fresh bread fills the air and delivers a
+            unique warmth every day. We serve a diverse selection of bread, from
+            soft classic loaves to unique bread creations with various flavors
+            and textures.
+          </section>
+        </div>
+
+        <div class="flex-space-between" style="flex-wrap: wrap">
+          <div class="social-media">
+            <section>
+              <h3>Social Media</h3>
+              <span
+                ><a href="https://facebook.com"
+                  ><i class="fab fa-facebook-square"></i>&ensp;Facebook</a
+                ></span
+              >
+              <span
+                ><a href="https://instagram.com"
+                  ><i class="fab fa-instagram"></i>&ensp;Instagram</a
+                ></span
+              >
+              <span
+                ><a href="https://tiktok.com"
+                  ><i class="fab fa-tiktok"></i>&ensp;Tiktok</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="contact">
+            <section>
+              <h3>Contact Us</h3>
+              <span
+                ><a href="https://wa.me/628123456789"
+                  ><i class="fab fa-whatsapp"></i>&ensp;08123456789</a
+                ></span
+              >
+              <span>
+                <a href="mailto:contact@example.com"
+                  ><i class="fa-regular fa-envelope"></i>&ensp;contact@example.com</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="legalitas">
+            <section>
+              <h3>Legal</h3>
+              <span
+                ><a href="javascript:void(0)"
+                  ><i class="fa-solid fa-file-signature"></i>&ensp;Terms &
+                  Conditions</a
+                ></span
+              >
+              <span
+                ><a href="javascript:void(0)"
+                  ><i class="fa-solid fa-user-shield"></i>&ensp;Privacy
+                  Policy</a
+                ></span
+              >
+            </section>
+          </div>
+
+          <div class="outlet">
+            <section>
+              <h3>Outlet Locations</h3>
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl.Villupuram No. 12, food street, Central bus top, DKI nagar 10340</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Coimbatore No. 5, Genteng, chinniyampalayam City, East nagar 60275</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Chennai No. 21, adaiyar, chennai District, DI nagar 55213</span
+              >
+              <span
+                ><i class="fas fa-map-marker-alt"></i>&ensp;Jl. Goa No. 25, Kauman, Jepara Sub-district, Jepara Regency, Central nagar 59417
+            </li></span
+              >
+            </section>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center copyright"
+        style="color: #edf2f7; margin-top: 4rem"
+      >
+        <p style="font-size: small">Copyright 2025, All Right Reserved</p>
+      </div>
+    </div>
+   
+  </body>
+</html>
